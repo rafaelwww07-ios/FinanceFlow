@@ -211,10 +211,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Rafael Mukhametov**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-
-> **Примечание:** Замените `@yourusername` и `your.email@example.com` на ваши реальные данные перед публикацией
+- GitHub: [@rafaelwww07-ios](https://github.com/rafaelwww07-ios)
+- Email: rafaelwww07@mail.ru
 
 ---
 

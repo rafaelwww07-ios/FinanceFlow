@@ -6,14 +6,101 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		51E8D7C52ED7557F00897708 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8D7C42ED7557F00897708 /* WidgetKit.framework */; };
+		51E8D7C72ED7557F00897708 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8D7C62ED7557F00897708 /* SwiftUI.framework */; };
+		51E8D7D82ED7558000897708 /* FinanceFlowWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 51E8D7C22ED7557F00897708 /* FinanceFlowWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51E8D7ED2ED755AE00897708 /* FinanceFlowIntents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 51E8D7E42ED755AE00897708 /* FinanceFlowIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51E8D7D62ED7558000897708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51D75D702ED63E54001D814E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E8D7C12ED7557F00897708;
+			remoteInfo = FinanceFlowWidgetExtension;
+		};
+		51E8D7EB2ED755AE00897708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51D75D702ED63E54001D814E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E8D7E32ED755AE00897708;
+			remoteInfo = FinanceFlowIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51E8D7D92ED7558000897708 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51E8D7D82ED7558000897708 /* FinanceFlowWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E8D7F22ED755AE00897708 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				51E8D7ED2ED755AE00897708 /* FinanceFlowIntents.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		51D75D782ED63E54001D814E /* FinanceFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E8D7C22ED7557F00897708 /* FinanceFlowWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinanceFlowWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E8D7C42ED7557F00897708 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		51E8D7C62ED7557F00897708 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		51E8D7E42ED755AE00897708 /* FinanceFlowIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = FinanceFlowIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E8D7F32ED80FDC00897708 /* FinanceFlowWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinanceFlowWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		51E8D7DC2ED7558000897708 /* Exceptions for "FinanceFlowWidget" folder in "FinanceFlowWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 51E8D7C12ED7557F00897708 /* FinanceFlowWidgetExtension */;
+		};
+		51E8D7EE2ED755AE00897708 /* Exceptions for "FinanceFlowIntents" folder in "FinanceFlowIntents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 51E8D7E32ED755AE00897708 /* FinanceFlowIntents */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		51D75D7A2ED63E54001D814E /* FinanceFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FinanceFlow;
+			sourceTree = "<group>";
+		};
+		51E8D7C82ED7557F00897708 /* FinanceFlowWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				51E8D7DC2ED7558000897708 /* Exceptions for "FinanceFlowWidget" folder in "FinanceFlowWidgetExtension" target */,
+			);
+			path = FinanceFlowWidget;
+			sourceTree = "<group>";
+		};
+		51E8D7E52ED755AE00897708 /* FinanceFlowIntents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				51E8D7EE2ED755AE00897708 /* Exceptions for "FinanceFlowIntents" folder in "FinanceFlowIntents" target */,
+			);
+			path = FinanceFlowIntents;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +113,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51E8D7BF2ED7557F00897708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E8D7C72ED7557F00897708 /* SwiftUI.framework in Frameworks */,
+				51E8D7C52ED7557F00897708 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E8D7E12ED755AE00897708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		51D75D6F2ED63E54001D814E = {
 			isa = PBXGroup;
 			children = (
+				51E8D7F32ED80FDC00897708 /* FinanceFlowWidgetExtension.entitlements */,
 				51D75D7A2ED63E54001D814E /* FinanceFlow */,
+				51E8D7C82ED7557F00897708 /* FinanceFlowWidget */,
+				51E8D7E52ED755AE00897708 /* FinanceFlowIntents */,
+				51E8D7C32ED7557F00897708 /* Frameworks */,
 				51D75D792ED63E54001D814E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +148,19 @@
 			isa = PBXGroup;
 			children = (
 				51D75D782ED63E54001D814E /* FinanceFlow.app */,
+				51E8D7C22ED7557F00897708 /* FinanceFlowWidgetExtension.appex */,
+				51E8D7E42ED755AE00897708 /* FinanceFlowIntents.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		51E8D7C32ED7557F00897708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51E8D7C42ED7557F00897708 /* WidgetKit.framework */,
+				51E8D7C62ED7557F00897708 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +173,14 @@
 				51D75D742ED63E54001D814E /* Sources */,
 				51D75D752ED63E54001D814E /* Frameworks */,
 				51D75D762ED63E54001D814E /* Resources */,
+				51E8D7D92ED7558000897708 /* Embed Foundation Extensions */,
+				51E8D7F22ED755AE00897708 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51E8D7D72ED7558000897708 /* PBXTargetDependency */,
+				51E8D7EC2ED755AE00897708 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				51D75D7A2ED63E54001D814E /* FinanceFlow */,
@@ -69,6 +191,50 @@
 			productName = FinanceFlow;
 			productReference = 51D75D782ED63E54001D814E /* FinanceFlow.app */;
 			productType = "com.apple.product-type.application";
+		};
+		51E8D7C12ED7557F00897708 /* FinanceFlowWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E8D7DD2ED7558000897708 /* Build configuration list for PBXNativeTarget "FinanceFlowWidgetExtension" */;
+			buildPhases = (
+				51E8D7BE2ED7557F00897708 /* Sources */,
+				51E8D7BF2ED7557F00897708 /* Frameworks */,
+				51E8D7C02ED7557F00897708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				51E8D7C82ED7557F00897708 /* FinanceFlowWidget */,
+			);
+			name = FinanceFlowWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = FinanceFlowWidgetExtension;
+			productReference = 51E8D7C22ED7557F00897708 /* FinanceFlowWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		51E8D7E32ED755AE00897708 /* FinanceFlowIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E8D7EF2ED755AE00897708 /* Build configuration list for PBXNativeTarget "FinanceFlowIntents" */;
+			buildPhases = (
+				51E8D7E02ED755AE00897708 /* Sources */,
+				51E8D7E12ED755AE00897708 /* Frameworks */,
+				51E8D7E22ED755AE00897708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				51E8D7E52ED755AE00897708 /* FinanceFlowIntents */,
+			);
+			name = FinanceFlowIntents;
+			packageProductDependencies = (
+			);
+			productName = FinanceFlowIntents;
+			productReference = 51E8D7E42ED755AE00897708 /* FinanceFlowIntents.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +249,12 @@
 					51D75D772ED63E54001D814E = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
+					51E8D7C12ED7557F00897708 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					51E8D7E32ED755AE00897708 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 51D75D732ED63E54001D814E /* Build configuration list for PBXProject "FinanceFlow" */;
@@ -91,6 +263,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 51D75D6F2ED63E54001D814E;
 			minimizedProjectReferenceProxies = 1;
@@ -100,12 +273,28 @@
 			projectRoot = "";
 			targets = (
 				51D75D772ED63E54001D814E /* FinanceFlow */,
+				51E8D7C12ED7557F00897708 /* FinanceFlowWidgetExtension */,
+				51E8D7E32ED755AE00897708 /* FinanceFlowIntents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		51D75D762ED63E54001D814E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E8D7C02ED7557F00897708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E8D7E22ED755AE00897708 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +311,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51E8D7BE2ED7557F00897708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E8D7E02ED755AE00897708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51E8D7D72ED7558000897708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51E8D7C12ED7557F00897708 /* FinanceFlowWidgetExtension */;
+			targetProxy = 51E8D7D62ED7558000897708 /* PBXContainerItemProxy */;
+		};
+		51E8D7EC2ED755AE00897708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51E8D7E32ED755AE00897708 /* FinanceFlowIntents */;
+			targetProxy = 51E8D7EB2ED755AE00897708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		51D75D812ED63E55001D814E /* Debug */ = {
@@ -251,16 +467,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinanceFlow/FinanceFlow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J5LE373N4V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "FinanceFlow needs access to your camera to take photos of receipts.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "FinanceFlow needs access to your microphone to enable voice input for transactions.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FinanceFlow needs access to your photo library to attach receipt photos to transactions.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "FinanceFlow uses speech recognition to convert your voice commands into transactions.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "FinanceFlow would like to track your activity across other apps and websites to provide personalized financial insights.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,16 +507,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinanceFlow/FinanceFlow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J5LE373N4V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "FinanceFlow needs access to your camera to take photos of receipts.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "FinanceFlow needs access to your microphone to enable voice input for transactions.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FinanceFlow needs access to your photo library to attach receipt photos to transactions.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "FinanceFlow uses speech recognition to convert your voice commands into transactions.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "FinanceFlow would like to track your activity across other apps and websites to provide personalized financial insights.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +535,130 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51E8D7DA2ED7558000897708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FinanceFlowWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5LE373N4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceFlowWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceFlowWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.mukhametov.FinanceFlow.FinanceFlowWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51E8D7DB2ED7558000897708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FinanceFlowWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5LE373N4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceFlowWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceFlowWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.mukhametov.FinanceFlow.FinanceFlowWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51E8D7F02ED755AE00897708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FinanceFlowIntents/FinanceFlowIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5LE373N4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceFlowIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceFlowIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.mukhametov.FinanceFlow.FinanceFlowIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51E8D7F12ED755AE00897708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FinanceFlowIntents/FinanceFlowIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5LE373N4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceFlowIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceFlowIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.mukhametov.FinanceFlow.FinanceFlowIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +683,24 @@
 			buildConfigurations = (
 				51D75D842ED63E55001D814E /* Debug */,
 				51D75D852ED63E55001D814E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E8D7DD2ED7558000897708 /* Build configuration list for PBXNativeTarget "FinanceFlowWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E8D7DA2ED7558000897708 /* Debug */,
+				51E8D7DB2ED7558000897708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E8D7EF2ED755AE00897708 /* Build configuration list for PBXNativeTarget "FinanceFlowIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E8D7F02ED755AE00897708 /* Debug */,
+				51E8D7F12ED755AE00897708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

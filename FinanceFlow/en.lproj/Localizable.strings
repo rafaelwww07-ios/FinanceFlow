@@ -1,0 +1,50 @@
+/* Today View */
+"Today" = "Today";
+"Total Balance" = "Total Balance";
+"Income" = "Income";
+"Expense" = "Expense";
+"Recent Transactions" = "Recent Transactions";
+"No transactions yet" = "No transactions yet";
+"Tap + to add your first transaction" = "Tap + to add your first transaction";
+
+/* Transaction Types */
+"Income" = "Income";
+"Expense" = "Expense";
+
+/* Add Transaction */
+"Add Transaction" = "Add Transaction";
+"Amount" = "Amount";
+"Type" = "Type";
+"Category" = "Category";
+"Date & Time" = "Date & Time";
+"Note" = "Note";
+"Optional note" = "Optional note";
+"Cancel" = "Cancel";
+"Save" = "Save";
+
+/* Edit Transaction */
+"Edit Transaction" = "Edit Transaction";
+
+/* Statistics */
+"Statistics" = "Statistics";
+"Week" = "Week";
+"Month" = "Month";
+"Year" = "Year";
+"All" = "All";
+"By Category" = "By Category";
+"No category data" = "No category data";
+"Export to CSV" = "Export to CSV";
+
+/* Categories */
+"Categories" = "Categories";
+"Default" = "Default";
+"New Category" = "New Category";
+"Edit Category" = "Edit Category";
+"Category name" = "Category name";
+"Icon" = "Icon";
+"Color" = "Color";
+"Delete" = "Delete";
+"Edit" = "Edit";
+
+
+

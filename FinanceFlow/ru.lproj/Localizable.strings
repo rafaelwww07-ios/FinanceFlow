@@ -1,0 +1,50 @@
+/* Today View */
+"Today" = "Сегодня";
+"Total Balance" = "Общий баланс";
+"Income" = "Доходы";
+"Expense" = "Расходы";
+"Recent Transactions" = "Последние транзакции";
+"No transactions yet" = "Пока нет транзакций";
+"Tap + to add your first transaction" = "Нажмите + чтобы добавить первую транзакцию";
+
+/* Transaction Types */
+"Income" = "Доход";
+"Expense" = "Расход";
+
+/* Add Transaction */
+"Add Transaction" = "Добавить транзакцию";
+"Amount" = "Сумма";
+"Type" = "Тип";
+"Category" = "Категория";
+"Date & Time" = "Дата и время";
+"Note" = "Заметка";
+"Optional note" = "Необязательная заметка";
+"Cancel" = "Отмена";
+"Save" = "Сохранить";
+
+/* Edit Transaction */
+"Edit Transaction" = "Редактировать транзакцию";
+
+/* Statistics */
+"Statistics" = "Статистика";
+"Week" = "Неделя";
+"Month" = "Месяц";
+"Year" = "Год";
+"All" = "Все";
+"By Category" = "По категориям";
+"No category data" = "Нет данных по категориям";
+"Export to CSV" = "Экспорт в CSV";
+
+/* Categories */
+"Categories" = "Категории";
+"Default" = "По умолчанию";
+"New Category" = "Новая категория";
+"Edit Category" = "Редактировать категорию";
+"Category name" = "Название категории";
+"Icon" = "Иконка";
+"Color" = "Цвет";
+"Delete" = "Удалить";
+"Edit" = "Редактировать";
+
+
+
